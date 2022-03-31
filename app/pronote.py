@@ -42,7 +42,7 @@ class Pronote:
             _ent = getattr(ent, cas)
         else:
             _ent = ''
-        client = pronotepy.Client('https://'+prefix_url+'.index-education.net/pronote/eleve.html', username, password, _ent)
+        client = pronotepy.Client('http://'+prefix_url+'/parent.html', username, password, _ent)
         if client.logged_in:
            self.isConnected = True
         else:
